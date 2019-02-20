@@ -1,3 +1,59 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  padding-top: 1px;
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  font-family: helvetica;
+  border-right: 1px solid #bbb;
+}
+
+
+body .sticky-note-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-overflow: hidden;
+}
+
+body .sticky-note-container .sticky-note {
+  text-decoration: none;
+  height: 250px;
+  width: 250px;
+  font-family: helvetica;
+  position: relative;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 1em;
+  -webkit-animation: fade 1s linear;
+          animation: fade 1s linear;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+body .sticky-note-container .sticky-note .sticky-note-body {
+  text-decoration: none;
+  height: 200px;
+  width: 200px;
+  padding: 1em;
+  font-size: 16px;
+  text-decoration: none;
+}
