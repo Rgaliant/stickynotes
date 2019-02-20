@@ -8,8 +8,8 @@
 <p class="sticky-note-body" style="background-color: <%= @color_array.sample %>">
   <%= note.body %>
   <br />
-  <%= link_to '🛠', edit_note_path(note) %>
-  <%= link_to '🗑', note, method: :delete %>
+  <a style="background-color: <%= @color_array.sample %>"><%= link_to '+', edit_note_path(note) %></a>
+  <a style="background-color: <%= @color_array.sample %>"><%= link_to 'X', note, method: :delete %></a>
   </p>
   </div>
 <% end %>
