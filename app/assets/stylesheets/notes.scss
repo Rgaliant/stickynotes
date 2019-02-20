@@ -5,9 +5,11 @@
 background-color:grey;
 }
 
-h1 {
- text-align: center;
+.page-title {
+ text-align: left;
  font-family: chalkduster;
+ padding-left: 3em;
+ padding-bottom: 0px;
 }
 
 ul {
@@ -31,7 +33,7 @@ li a {
   color: white;
   list-style-type: none;
   font-size: 20px;
-  font-family: helvetica;
+  font-family: chalkduster;
 }
 
 
@@ -41,7 +43,7 @@ li a {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  padding: 2em;
+  padding: 1em;
   margin: 1em;
   grid-template-columns: auto auto auto auto;
   position: relative;
@@ -52,24 +54,28 @@ li a {
   text-decoration: none;
   height: 250px;
   width: 250px;
+  padding-top: 0px;
   font-family: chalkduster;
   position: relative;
   border-radius: 2px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  margin: 1em;
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+  margin: 2em;
+  box-shadow: 16px 34px 20px rgba(0, 0, 0, 0.8);
   
 }
 
 .sticky-note-container .sticky-note .sticky-note-body {
   height: 250px;
   width: 250px;
-  font-size: 16px;
+  font-size: 24px;
   display: block;
 
 }
  .sticky-note-container .sticky-note .sticky-note-body a {
   text-decoration: none;
-  
+  font-size: 30px;
+  opacity: 0.2;
+}
+.sticky-note-container .sticky-note .sticky-note-body a:hover {
+ background-color: blue;
+ opacity: 1;
 }

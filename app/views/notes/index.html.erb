@@ -1,4 +1,4 @@
-<h1> Notes </h1>
+<h1 class="page-title"> Notes </h1>
 <div class="sticky-note-container">
 
 <% @color_array = ['#abe3ef', '#f7e368', '#f6e7a3', '#f8c5d0'] %>
@@ -8,8 +8,8 @@
 <p class="sticky-note-body" style="background-color: <%= @color_array.sample %>">
   <%= note.body %>
   <br />
-  <a style="background-color: <%= @color_array.sample %>"><%= link_to '+', edit_note_path(note) %></a>
-  <a style="background-color: <%= @color_array.sample %>"><%= link_to 'X', note, method: :delete %></a>
+  <a style="background-color: <%= @color_array.sample %>"><%= link_to '🗓', edit_note_path(note) %></a>
+  <a style="background-color: <%= @color_array.sample %>"><%= link_to '🗑', note, method: :delete %></a>
   </p>
   </div>
 <% end %>
