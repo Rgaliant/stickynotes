@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="notes.scss">
 <h1 class="page-title"> Notes </h1>
 <div class="sticky-note-container">
 
@@ -8,8 +9,8 @@
 <p class="sticky-note-body" style="background-color: <%= @color_array.sample %>">
   <%= note.body %>
   <br />
-  <a style="background-color: <%= @color_array.sample %>"><%= link_to '🗓', edit_note_path(note) %></a>
-  <a style="background-color: <%= @color_array.sample %>"><%= link_to '🗑', note, method: :delete %></a>
+  <%= link_to '🗓', edit_note_path(note), :class => 'edit-button' %></a>
+  <%= link_to '🗑', note, method: :delete, :class => 'trash-button' %></a>
   </p>
   </div>
 <% end %>

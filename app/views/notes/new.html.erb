@@ -1,13 +1,13 @@
-<h1>New Note</h1>
+<link rel="stylesheet" type="text/css" href="notes.scss">
+
+
+<h1 class="new-note-title">New Note</h1>
+
 <%= form_for @notes do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
 
-  <%= f.label :author %>
-  <%= f.text_field :author %>
+ 
+  <%= f.text_area :body, :class => 'sticky-edit' %>
 
-  <%= f.label :body %>
-  <%= f.text_area :body %>
-
-  <%= f.submit %>
+  <%= f.submit "📌", :class => 'sticky-submit' %>
 <% end %>
+
